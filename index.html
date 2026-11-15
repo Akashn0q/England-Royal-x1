@@ -1,119 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>England Royal</title>
+<title>Cricket King - Official Channel</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-body{
-font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#080d20,#142b50,#080d20);
-color:white;
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:20px;
-}
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top, #0f3d24, #071910, #040d08);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
 
-.container{
-width:100%;
-max-width:420px;
-text-align:center;
-background:rgba(255,255,255,.07);
-border:1px solid rgba(255,255,255,.15);
-border-radius:22px;
-padding:35px 22px;
-box-shadow:0 15px 40px rgba(0,0,0,.4);
-}
+  .card {
+    width: 100%;
+    max-width: 410px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(56, 239, 125, 0.25);
+    border-radius: 24px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  }
 
-.logo{
-width:auto;
-height:100px;
-border-radius:50%;
-background:linear-gradient(135deg,#d8b45a,#fff0b0);
-display:flex;
-align-items:center;
-justify-content:center;
-margin:0 auto 22px;
-font-size:48px;
-}
+  .live-badge {
+    display: inline-block;
+    background: rgba(255, 59, 59, 0.15);
+    color: #ff5252;
+    border: 1px solid #ff5252;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
 
-h1{
-font-size:29px;
-margin-bottom:12px;
-letter-spacing:1px;
-}
+  .logo-circle {
+    width: 95px;
+    height: 95px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 46px;
+    box-shadow: 0 0 25px rgba(56, 239, 125, 0.4);
+  }
 
-h1 span{color:#e9c66b}
+  h1 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
 
-.subtitle{
-color:#c5d5e8;
-font-size:14px;
-line-height:1.7;
-margin-bottom:25px;
-}
+  h1 span {
+    color: #38ef7d;
+  }
 
-.info{
-background:rgba(255,255,255,.07);
-border-radius:13px;
-padding:18px;
-margin-bottom:25px;
-line-height:2;
-font-size:14px;
-color:#e0e8f5;
-}
+  .tagline {
+    color: #b8d4c5;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
 
-.join-btn{
-display:block;
-width:100%;
-padding:16px;
-background:linear-gradient(90deg,#1765c5,#249cff);
-color:white;
-text-decoration:none;
-font-size:17px;
-font-weight:bold;
-border-radius:12px;
-}
+  .stats-box {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 14px;
+    padding: 14px 10px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
 
-.footer{
-margin-top:25px;
-color:#8da6c1;
-font-size:12px;
-}
+  .stat-item h3 {
+    color: #38ef7d;
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+
+  .stat-item p {
+    color: #9ab8a8;
+    font-size: 12px;
+  }
+
+  .features {
+    text-align: left;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 14px;
+    padding: 16px 18px;
+    margin-bottom: 26px;
+    font-size: 14px;
+    color: #e2f1e8;
+    line-height: 2.1;
+  }
+
+  .cta-btn {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(90deg, #11998e, #38ef7d);
+    color: #04140b;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 800;
+    border-radius: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 25px rgba(56, 239, 125, 0.35);
+    transition: transform 0.2s ease;
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .disclaimer {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #6d8c7b;
+    line-height: 1.4;
+  }
 </style>
 </head>
-
 <body>
-<div class="container">
 
-<div class="logo">🏏</div>
+  <div class="card">
+    <div class="live-badge">🔴 LIVE MATCH UPDATES</div>
+    
+    <div class="logo-circle">🏏</div>
+    
+    <h1>CRICKET <span>EXPERT</span></h1>
+    <p class="tagline">हर मैच की सटीक रिपोर्ट, पिच एनालिसिस और लाइव अपडेट्स के लिए अभी जुड़ें।</p>
+    
+    <div class="stats-box">
+      <div class="stat-item">
+        <h3>50K+</h3>
+        <p>सक्रिय मेंबर्स</p>
+      </div>
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>मुफ्त अपडेट्स</p>
+      </div>
+      <div class="stat-item">
+        <h3>24/7</h3>
+        <p>मैच कवरेज</p>
+      </div>
+    </div>
 
-<h1>ENGLAND <span>ROYAL</span></h1>
+    <div class="features">
+      <div>⚡ सबसे तेज़ टॉस और प्लेइंग 11 अपडेट</div>
+      <div>📊 गहराई से पिच और मौसम की रिपोर्ट</div>
+      <div>🏆 सभी इंटरनेशनल और लीग मैचों की जानकारी</div>
+    </div>
+    
+    <!-- नीचे href="#" की जगह अपने Telegram या WhatsApp चैनल का लिंक डालें -->
+    <a href="https://t.me" class="cta-btn">JOIN TELEGRAM CHANNEL</a>
+    
+    <p class="disclaimer">
+      नोट: यह पेज केवल खेल से जुड़ी जानकारी और मनोरंजन के उद्देश्य से बनाया गया है।
+    </p>
+  </div>
 
-<p class="subtitle">
-Welcome To England Royal
-<br>
-Your Destination For Cricket Updates
-</p>
-
-<div class="info">
-🏏 Latest Cricket Updates<br>
-📊 Match Analysis & Statistics<br>
-🌍 Cricket News & Information
-</div>
-
-<a href="#" class="join-btn">
-JOIN TELEGRAM 
-</a>
-
-<div class="footer">
-© 2026 England Royal. All Rights Reserved.
-</div>
-
-</div>
 </body>
 </html>
