@@ -1,199 +1,182 @@
 <!DOCTYPE html>
-<html lang="hi">
-<head><!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1120282601055992');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1120282601055992&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ENGLAND ROYAL - Official Channel</title>
+<title>England Royal | Official Cricket Hub</title>
 
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle at top, #0f3d24, #071910, #040d08);
-    color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
+body{
+  font-family:Arial,sans-serif;
+  background:#080d19;
+  color:white;
+  min-height:100vh;
+}
 
-  .card {
-    width: 100%;
-    max-width: 410px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(56, 239, 125, 0.25);
-    border-radius: 24px;
-    padding: 32px 24px;
-    text-align: center;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
-  }
+.container{
+  max-width:480px;
+  margin:auto;
+  padding:25px 18px;
+  text-align:center;
+}
 
-  .live-badge {
-    display: inline-block;
-    background: rgba(255, 59, 59, 0.15);
-    color: #ff5252;
-    border: 1px solid #ff5252;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 18px;
-  }
+.top{
+  padding:12px;
+  color:#d6b65b;
+  letter-spacing:4px;
+  font-size:12px;
+  border-bottom:1px solid #27334c;
+}
 
-  .logo-circle {
-    width: 95px;
-    height: 95px;
-    margin: 0 auto 18px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #11998e, #38ef7d);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 46px;
-    box-shadow: 0 0 25px rgba(56, 239, 125, 0.4);
-  }
+.logo{
+  width:105px;
+  height:105px;
+  border-radius:50%;
+  margin:35px auto 18px;
+  border:3px solid #d6b65b;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:34px;
+  font-weight:bold;
+  color:#e3c36c;
+  background:linear-gradient(145deg,#17294a,#080d19);
+  box-shadow:0 0 25px #d6b65b33;
+}
 
-  h1 {
-    font-size: 28px;
-    font-weight: 800;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
+h1{
+  font-size:29px;
+  letter-spacing:3px;
+  color:#e6c66e;
+}
 
-  h1 span {
-    color: #38ef7d;
-  }
+.subtitle{
+  color:#aab5ca;
+  font-size:13px;
+  margin-top:10px;
+  letter-spacing:2px;
+}
 
-  .tagline {
-    color: #b8d4c5;
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 24px;
-  }
+.line{
+  width:65px;
+  height:3px;
+  background:#d6b65b;
+  margin:25px auto;
+  border-radius:10px;
+}
 
-  .stats-box {
-    display: flex;
-    justify-content: space-around;
-    background: rgba(0, 0, 0, 0.35);
-    border-radius: 14px;
-    padding: 14px 10px;
-    margin-bottom: 22px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-  }
+.card{
+  background:linear-gradient(145deg,#121e35,#0c1425);
+  border:1px solid #273b5c;
+  border-radius:18px;
+  padding:25px 20px;
+  margin-top:20px;
+}
 
-  .stat-item h3 {
-    color: #38ef7d;
-    font-size: 18px;
-    margin-bottom: 2px;
-  }
+.card h2{
+  color:#e6c66e;
+  font-size:19px;
+  margin-bottom:14px;
+}
 
-  .stat-item p {
-    color: #9ab8a8;
-    font-size: 12px;
-  }
+.card p{
+  color:#c2cada;
+  font-size:14px;
+  line-height:1.8;
+}
 
-  .features {
-    text-align: left;
-    background: rgba(255, 255, 255, 0.04);
-    border-radius: 14px;
-    padding: 16px 18px;
-    margin-bottom: 26px;
-    font-size: 14px;
-    color: #e2f1e8;
-    line-height: 2.1;
-  }
+.join{
+  display:inline-block;
+  margin-top:25px;
+  padding:13px 25px;
+  background:linear-gradient(90deg,#d5ae4e,#f0d78e);
+  color:#111827;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:13px;
+  border-radius:8px;
+  letter-spacing:1px;
+  transition:0.3s;
+}
 
-  .cta-btn {
-    display: block;
-    width: 100%;
-    padding: 16px;
-    background: linear-gradient(90deg, #11998e, #38ef7d);
-    color: #04140b;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 800;
-    border-radius: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    box-shadow: 0 8px 25px rgba(56, 239, 125, 0.35);
-    transition: transform 0.2s ease;
-  }
+.join:hover{
+  transform:scale(1.04);
+}
 
-  .cta-btn:hover {
-    transform: translateY(-2px);
-  }
+.features{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:20px;
+}
 
-  .disclaimer {
-    margin-top: 20px;
-    font-size: 11px;
-    color: #6d8c7b;
-    line-height: 1.4;
-  }
+.feature{
+  background:#111c30;
+  border:1px solid #273b5c;
+  border-radius:12px;
+  padding:18px 8px;
+  color:#e6c66e;
+  font-size:13px;
+}
+
+footer{
+  margin-top:35px;
+  padding:20px 5px;
+  color:#8290a8;
+  font-size:11px;
+  line-height:1.7;
+  border-top:1px solid #27334c;
+}
 </style>
 </head>
+
 <body>
 
-  <div class="card">
-    <div class="live-badge">🔴 LIVE MATCH UPDATES</div>
-    
-    <div class="logo-circle">👑</div>
-    
-    <h1>ENGLAND <span>ROYAL</span></h1>
-    <p class="tagline">हर मैच की सटीक रिपोर्ट, पिच एनालिसिस और लाइव अपडेट्स के लिए अभी जुड़ें।</p>
-    
-    <div class="stats-box">
-      <div class="stat-item">
-        <h3>23K+</h3>
-        <p>सक्रिय मेंबर्स</p>
-      </div>
-      <div class="stat-item">
-        <h3>100%</h3>
-        <p>मुफ्त अपडेट्स</p>
-      </div>
-      <div class="stat-item">
-        <h3>24/7</h3>
-        <p>मैच कवरेज</p>
-      </div>
-    </div>
+<div class="container">
 
-    <div class="features">
-      <div>⚡ सबसे तेज़ टॉस और प्लेइंग 11 अपडेट</div>
-      <div>📊 गहराई से पिच और मौसम की रिपोर्ट</div>
-      <div>🏆 सभी इंटरनेशनल और लीग मैचों की जानकारी</div>
-    </div>
-    
-    <!-- आपका टेलीग्राम लिंक और क्लिक ट्रैकिंग -->
-    <a href="https://telegram.me/+jXXW2ric2BYyOTU1" onclick="fbq('track', 'Lead');" class="cta-btn">JOIN TELEGRAM CHANNEL</a>
-    
-    <p class="disclaimer">
-      नोट: यह पेज केवल खेल से जुड़ी जानकारी और मनोरंजन के उद्देश्य से बनाया गया है।
-    </p>
-  </div>
+<div class="top">WELCOME TO OFFICIAL CRICKET HUB</div>
+
+<div class="logo">ER</div>
+
+<h1>ENGLAND ROYAL</h1>
+<div class="subtitle">CRICKET • ANALYSIS • UPDATES</div>
+
+<div class="line"></div>
+
+<div class="card">
+<h2>WELCOME TO ENGLAND ROYAL</h2>
+
+<p>
+Stay connected with the latest cricket updates,
+match previews, team information, statistics
+and match analysis.
+</p>
+
+<a class="join" href="https://t.me/YOUR_CHANNEL_LINK"
+target="_blank">
+JOIN TELEGRAM CHANNEL →
+</a>
+</div>
+
+<div class="features">
+<div class="feature">🏏 Match Updates</div>
+<div class="feature">📊 Match Analysis</div>
+<div class="feature">🏆 Team News</div>
+<div class="feature">📢 Cricket Updates</div>
+</div>
+
+<footer>
+ENGLAND ROYAL © 2026<br>
+For informational and entertainment purposes only.
+</footer>
+
+</div>
 
 </body>
 </html>
